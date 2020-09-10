@@ -1,0 +1,31 @@
+1 - Make a class to be a subclass of the thread class or implementing the runnable interface
+
+2 - Run
+
+3 - Start
+
+4 - Line 14 and 15 are different. Using ReadWriteThread().
+5 - 14 starts the thread for output stream and 15 starts the thread for input stream 
+
+6 - Don't think so. They're threaded so they're both running in parallel 
+
+7 - 
+
+import java.net.*;
+
+public class Client{
+    public static void main(String[] args) {
+        try {
+            int port = Integer.parseInt(args[0]);
+            Socket socket = new Socket(args[1], port);
+            System.err.println("Connected to " + args[1] + ", port: " + port);
+            new ReadWriteThread(System.in, socket.getOutputStream()).start();
+            new ReadWriteThread(socket.getInputStream(), System.out).start();
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.err.println("\nProgram usage: java Server <port>");
+        }
+    }
+}
+
+8 - Their pause time periods are waiting for each other, resulting in the jumbled outputs

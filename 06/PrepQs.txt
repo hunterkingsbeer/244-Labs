@@ -1,0 +1,35 @@
+1 XOR operator is  ^ 
+
+2 Meant for reading streams of raw bytes such as image data, via input bytes from a file in a file system.
+
+3 InputStream in = new FileInputStream(file);
+
+4 read( )   — the next byte of data or a -1 if it is the end of the file.
+
+5 An output stream for writing data to a File or to a FileDescriptor. 
+
+6 OutputStream out = new FileOutputStream(file);
+
+7 write(int b)
+
+8 close( ) and/or flush( )
+
+9 Read String then int from command line args --
+
+public class data{
+    public static void main(String[] args){
+        String firstArg;
+        int secondArg;
+
+        if (args.length > 0) {
+
+            firstArg = args[0];
+ 
+	    for(int i = 0; i < Integer.parseInt(args[1]) ; i++){
+		System.out.println(firstArg);
+	    }
+	}
+
+    }
+}
+

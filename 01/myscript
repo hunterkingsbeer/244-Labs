@@ -1,0 +1,4 @@
+ls -l
+my_var="How are you?"
+echo "$my_var my_var $my_var"
+ls

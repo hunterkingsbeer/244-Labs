@@ -1,0 +1,27 @@
+
+1 - Reads bytes and decodes them into characters using a specified charset
+
+2 - Consider wrapping an InputStreamReader within a BufferedReader. Example: BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+3 - readLine(), a String containing the contents of the line, not including any line-termination characters or null if the end of the stream has been reached
+
+4 - Prints a string. If the argument is null then the string "null" is printed. Otherwise, the string's characters are converted into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the write(int) method
+
+5 - Creates a server socket bound to the specific port
+
+6 - Listens for a connection to be made to this socket and accepts it, the methods blocks until a connection is made
+
+7 - Socket(InetAddress address, int port), supports client program needs of specifying to IP and port number
+
+8 - Returns an input stream for this socket
+
+9 - Returns an output stream for this socket
+
+10 - Initialises to the time at which it was allocated, to the nearest millisecond
+
+11 - 
+
+Date date = new Date();
+System.out.println(date.toString())
+
+12 - Its showing the user how to correctly use the program in the terminal <port> being the port, and [host] being the IP address.

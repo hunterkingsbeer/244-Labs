@@ -1,0 +1,29 @@
+1. Synchronised ensures that only one thread accesses 'clients' at a single time
+
+2. Line 15, 
+
+3. Lines 31-37
+
+4. ChatServer started
+
+5. Accepted connection from client_1
+
+6. Welcome! you are client_1.
+
+7. Accepted connection from client 2
+
+8. Welcome! you are client 2.
+
+9. client_1: Hello from client 1
+
+10. client_1: Hello from client 1
+
+11. Sending ’Hello from client 1’ to : [client_1, client_2, client_3]
+
+12. client_3 closed connection!
+
+13. client_1: something
+
+14. Sending ’something’ to : [client_1, client_2]
+
+15. Client 4
